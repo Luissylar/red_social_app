@@ -136,7 +136,7 @@ class LoginPage extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.deepPurple,
         foregroundColor: Colors.white,
-        minimumSize: Size(double.infinity, 50),
+        minimumSize: Size(150, 50),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
         ),
