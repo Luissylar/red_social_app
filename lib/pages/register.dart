@@ -8,10 +8,10 @@ class RegisterPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Registro"),
-          leading: Icon(
-            Icons.person_add, 
-            size: 32,
+          title: Text("Social Dev"),
+          leading: Icon( // Icono como logotipo de red social
+            Icons.face_2, // Cambia a cualquier icono que desees usar como logotipo de red social
+            size: 32, // Tamaño del icono
           ),
         ),
         body: Container(
