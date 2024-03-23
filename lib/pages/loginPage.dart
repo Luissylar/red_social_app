@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:red_social/pages/ForgotPasswordPage.dart';
 import 'package:red_social/pages/register.dart';
 // La importación de 'package:flutter/rendering.dart' parece no ser necesaria aquí.
 
@@ -148,7 +149,11 @@ class LoginPage extends StatelessWidget {
   Widget _forgotPassword(BuildContext context) {
     return TextButton(
       onPressed: () {
-        // Lógica para olvidar contraseña
+        // Navegar a la página de registro
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ForgotPasswordPage()),
+        );
       },
       child: Text('Olvidé mi contraseña'),
     );
