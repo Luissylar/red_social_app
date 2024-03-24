@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:red_social/pages/ForgotPasswordPage.dart';
+import 'package:red_social/pages/posts/index.dart';
 import 'package:red_social/pages/register.dart';
 // La importación de 'package:flutter/rendering.dart' parece no ser necesaria aquí.
 
@@ -130,9 +131,11 @@ class LoginPage extends StatelessWidget {
             ),
           );
         } else {
-          // Si los campos son válidos, puedes proceder con la lógica de inicio de sesión
-          print("Iniciando sesión...");
-        }
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => PostsPage()),
+          );
+          }
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.deepPurple,
